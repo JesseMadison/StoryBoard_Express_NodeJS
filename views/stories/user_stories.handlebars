@@ -1,0 +1,13 @@
+{{#each stories}}
+  <div class="card">
+    <div class="card-content">
+      <p>{{user.firstName}}  {{user.lastName}} <img src="{{user.image}}" alt="" class="circle responsive-img"></p>
+      <h4>{{title}}</h4>
+      <p>{{stripTags (truncate body 100)}} </p>
+
+      <a class "btn gray" href="/stories/show/{{id}}">Read more</a>
+    </div>
+  </div>
+
+{{/each}}
+<p>gggggggggs</p>
